@@ -31,8 +31,6 @@ let humanScore = 0;
 
 function playRound(pcChoice, humanChoice) {
 
-
-
     if (pcChoice === humanChoice) {
         console.log("Draw!");
     }
@@ -57,16 +55,13 @@ function playRound(pcChoice, humanChoice) {
 
 }
 
-
 function playGame() {
-
 
     for (let i = 0; i < 5; i++) {
         const pcChoice = getComputerChoice();
         const humanChoice = getHumanChoice();
         playRound(pcChoice, humanChoice);
     }
-
 
     console.log(`Game over! You: ${humanScore} | Computer: ${computerScore}`);
 
